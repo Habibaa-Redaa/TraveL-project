@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+    box-sizing: border-box;
+    background-color: #75c3a1;
+}
+
+*::selection {
+    background: #296a20;
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #75c3a1;
+    color: #0f4408;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5%;
+}
+
+header .logo {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .logo span {
+    color: #296a20;
+}
+
+header .navbar a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 0.8rem;
+}
+
+header .navbar a:hover {
+    color: #296a20;
+}
+
+header .icons i {
+    font-size: 2.5rem;
+    color: #296a20;
+    cursor: pointer;
+    margin: left 0;
+}
+
+header .icons i:hover {
+    color: #fff;
+}
+
+header .search-bar-container #search-bar {
+    padding: 0.5rem;
+    text-transform: none;
+    color: #333;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+}
+
+header .search-bar-container label {
+    color: #296a20;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+}
+
+div.sign_in {
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    right: 0;
+    top: -120%;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    min-height: 80rem;
+    align-items: center;
+    background-color: #144816e8;
+}
+
+.sign_in.active {
+    top: 0;
+}
+
+.sign_in form {
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    background: #75c3a1;
+    width: 50rem;
+}
+
+.one {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #0f4408;
+    margin: 0.6rem 0;
+    border: 0.5rem solid #0f4408;
+}
+
+.btn {
+    padding: 1rem 17.5rem;
+    margin: 1rem;
+    background-color: #0f4408;
+    color: #fff;
+    font-size: 2.5rem;
+    display: inline-block;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 2.5rem;
+}
+
+.btn:hover {
+    background-color: #296a20;
+    color: #fff;
+}
+
+.sign_in form a {
+    font-size: 1.5rem;
+}
+
+.sign_in h2 {
+    font-size: 3rem;
+    color: #0f4408;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.sign_in i {
+    color: #0f4408;
+    text-align: center;
+    padding: 1rem 205px;
+    font-size: 5.5rem;
+    margin-top: 0px;
+    display: inline;
+}
+
+.sign_in p {
+    font-size: 1.5rem;
+    color: #0f4408;
+}
+
+.frame {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    min-height: 60rem;
+    align-items: center;
+    background-color: #144816e8;
+    padding: 15rem 32rem;
+    position: fixed;
+}
+
+.sign_up form {
+    top: 0;
+    margin: -7rem;
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    background: #75c3a1;
+    width: 50rem;
+}
+
+.btn1 {
+    padding: 1rem 17.5rem;
+    margin: 1rem;
+    background-color: #0f4408;
+    color: #fff;
+    font-size: 2.5rem;
+    display: inline-block;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 2.5rem;
+}
+
+.btn1:hover {
+    background-color: #296a20;
+    color: #fff;
+}
+
+.sign_up p {
+    font-size: 1.5rem;
+    color: #0f4408;
+}
+
+.sign_up h2 {
+    font-size: 3rem;
+    color: #0f4408;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.sign_up i {
+    color: #0f4408;
+    text-align: center;
+    padding: 1.5rem 205px;
+    font-size: 5.5rem;
+    margin-top: 0px;
+    display: inline;
+}
+
+.home {
+    margin: 77rem 0;
+}
+
+.home video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.book {
+    margin: 5rem 0;
+}
+
+.book img {
+    width: 60rem;
+    height: 60rem;
+}
+
+.book h1 {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 66px;
+}
+
+.book h1 span {
+    color: #0f4408;
+}
+
+.book form {
+    padding: 27rem;
+    margin: -66rem -26rem 0 34rem;
+}
+
+.book form .inputBox {
+    padding: 0.5rem 0;
+}
+
+.book form .inputBox input {
+    width: 100%;
+    padding: 1rem;
+    border: 0.1rem solid #0f4408;
+    font-size: 1.7rem;
+    color: #0f4408;
+    text-transform: none;
+}
+
+.book h2 {
+    color: #fefefe;
+    font-size: 2.5rem;
+    margin: 0rem 33rem;
+}
+
+.packages .box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    margin: 1rem;
+}
+
+.packages .box .three {
+    border: 10px solid #0f4408;
+    border-radius: 3.5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgb(0 0 0 / 44%);
+    flex: 1 1 30rem;
+    height: 50rem;
+    position: relative;
+}
+
+.packages h1 {
+    margin: -20rem 6rem 0rem;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 66px;
+}
+
+.packages h1 span {
+    font-weight: bold;
+    font-size: 9rem;
+    color: #0f4408;
+}
+
+.packages .box .three img {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.packages .box .content {
+    padding: 2rem;
+}
+
+.packages .box .three .content h3 {
+    font-size: 2rem;
+    color: #0f4408;
+}
+
+.packages .box .three .content p {
+    font-size: 1.7rem;
+    color: #0f4408;
+    padding: 1rem 0;
+}
+
+.packages .box .three .content .stars i {
+    font-size: 1.7rem;
+    color: #296a20;
+}
+
+.packages .box .three .content .price {
+    font-size: 2rem;
+    color: #0f4408;
+}
+
+.gallery .box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.gallery .box .three {
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border: 10px solid #0f4408;
+    border-radius: 0.5rem;
+    flex: 1 1 30rem;
+    height: 25rem;
+    position: relative;
+}
+
+.gallery .box .three img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .box .three .content {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+.gallery .box .three:hover .content {
+    top: 0;
+}
+
+.gallery h1 {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 66px;
+    padding: 24rem 0 8rem;
+}
+
+.gallery h1 span {
+    font-weight: bold;
+    font-size: 9rem;
+    color: #0f4408;
+}
+
+.review h1 {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 66px;
+    padding: 7rem 0 4rem;
+}
+
+.review h1 span {
+    font-weight: bold;
+    font-size: 9rem;
+    color: #0f4408;
+}
+
+.review table {
+    margin: -2rem 8rem;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    border: 3px solid #0f4408;
+}
+
+.review .four {
+    border: 3rem solid #75c3a1
+}
+
+.review table th {
+    font-size: 3.5rem;
+    color: #0f4408;
+}
+
+.review table,
+th,
+td {
+    border: 3px solid;
+    font-size: 1.5rem;
+}
+
+.contact h1 {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 66px;
+    padding: 15rem 0 4rem;
+}
+
+.contact h1 span {
+    font-weight: bold;
+    font-size: 9rem;
+    color: #0f4408;
+}
+
+.contact img {
+    width: 55rem;
+    height: 35rem;
+    margin: 2rem;
+}
+
+.contact form {
+    padding: 27rem;
+    margin: -66rem -26rem 0 34rem;
+}
+
+.contact form .inputBox {
+    padding: 0.5rem 0;
+}
+
+.contact form .inputBox input {
+    width: 100%;
+    padding: 1rem;
+    border: 0.1rem solid #0f4408;
+    font-size: 1.7rem;
+    color: #0f4408;
+    text-transform: none;
+}
+
+.contact h2 {
+    color: #fefefe;
+    font-size: 2.5rem;
+    margin: 0rem 33rem;
+}
+
+.contact form textarea {
+    width: 100%;
+    height: 10rem;
+    color: #0f4408;
+    font-size: 1.5rem;
+    border: 2px solid #0f4408;
+}
+
+footer .box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+footer .box .three {
+    padding: 1rem 0;
+    flex: 1 1 25rem;
+}
+
+footer .box .three h3 {
+    font-size: 2.5rem;
+    padding: .7rem 0;
+    color: #0f4408;
+}
+
+footer .box .three li {
+    font-size: 1.5rem;
+    color: #0f4408;
+}
+
+footer .box .three li a {
+    font-size: 1.5rem;
+    color: #0f4408;
+}
+
+footer .box .three li a:hover {
+    color: #fff;
+}
+
+footer .box .three p {
+    font-size: 1.5rem;
+    color: #0f4408;
+}
